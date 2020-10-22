@@ -164,11 +164,11 @@ namespace PTest1022 {
             // 出力例）60 36 135 195 102 105 195 159 237
 
             /*** ●●● ここへ解答を入力 ●●● ***/
-            foreach (var item in numbers) {
-                Console.Write(item * 3 + " ");
+            foreach (var item in numbers.Select(s=>s*3)) {
+                Console.Write(item + " ");
             }
 
-
+            Console.WriteLine();//改行
 
 
 
